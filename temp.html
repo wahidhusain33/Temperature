@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+</head>
+<body>
+    <input type="number">
+    <button id="celcius" onclick="c2f()">Fahrenheit</button>
+    <button id="fahrenheit" onclick="f2c()">Celcius</button>
+   
+    <script>
+        var cel=document.getElementById('celcius');
+        var fahr=document.getElementById('fahrenheit');
+        var inputx=document.querySelector('input')
+      function c2f(){
+          let temp=Number(inputx.value);
+          var fahr= 1.8*temp+32;
+          console.log(fahr);
+          alert(fahr);
+      }
+      function f2c(){
+          let temp=Number(inputx.value);
+          var cel= 0.55*(temp-32);
+          console.log(cel);
+          alert(cel);
+      }
+    </script>
+</body>
+</html>
